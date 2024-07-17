@@ -20,3 +20,8 @@ ul {
   margin: 0;
   padding: 0;
 }
+.custom-gradient {
+  @apply bg-white;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(120deg, #d4d4d8, #f4f4f5, #d4d4d8) border-box;
+}

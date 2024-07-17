@@ -39,9 +39,27 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className="bg-gray-100 dark:bg-[#27272a] text-[#3f3f46cc] dark:text-[#d4d4d8cc] w-[90%] rounded top-6 pl-4 pr-4 sm:pl-6 sm:pr-6 fixed">
+    <div className="bg-gray-50 dark:bg-[#27272a] text-[#3f3f46cc] dark:text-[#d4d4d8cc] w-[90%] rounded-md top-6 pl-4 pr-4 sm:pl-6 sm:pr-6 fixed">
       <div className="pt-2 pb-2 md:pt-3 md:pb-3 flex justify-between items-center">
-        <div>lkbvbjk</div>
+        <div className="flex gap-2 text-sm text-[#3f3f46] dark:invert">
+          <div className="bg-[#ebffea] pl-3 pr-3 pt-1 pb-1 rounded-full border border-[#d9ffd3] inline-flex items-center cursor-pointer hover:bg-[#d1ffe0]">
+            <div className="flex items-center justify-center w-4 h-4 bg-[#d1ffe0] rounded-full mr-2 animate-pulse">
+              <div className="w-2 h-2 bg-[#0ab313] rounded-full"></div>
+            </div>
+            Available
+          </div>
+          <div className="bg-[#fffcef] pl-3 pr-3 pt-1 pb-1 rounded-full border border-[#fff6d3] inline-flex items-center cursor-pointer hover:bg-[#fffcd9]">
+            <svg
+              className="w-3.5 mr-2 fill-[#625833]"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+            </svg>
+            <span className="hidden lg:block">chahat.create@gmail.com</span>
+            <span className="lg:hidden">Email</span>
+          </div>
+        </div>
+
         <div className="flex gap-3 items-center">
           <nav className="hidden lg:flex">
             <ul className="flex gap-2">
