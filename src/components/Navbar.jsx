@@ -39,7 +39,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className="bg-gray-50 dark:bg-[#27272a] text-[#3f3f46cc] dark:text-[#d4d4d8cc] w-[90%] rounded-md top-6 pl-4 pr-4 sm:pl-6 sm:pr-6 fixed">
+    <div className="z-10 bg-gray-50 dark:bg-[#27272a] text-[#3f3f46cc] dark:text-[#d4d4d8cc] w-[90%] rounded-md top-6 pl-4 pr-4 sm:pl-6 sm:pr-6 fixed">
       <div className="pt-2 pb-2 md:pt-3 md:pb-3 flex justify-between items-center">
         <div className="flex gap-2 text-sm text-[#3f3f46] dark:invert">
           <div className="bg-[#ebffea] pl-3 pr-3 pt-1 pb-1 rounded-full border border-[#d9ffd3] inline-flex items-center cursor-pointer hover:bg-[#d1ffe0]">

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -24,4 +25,7 @@ ul {
   @apply bg-white;
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(120deg, #d4d4d8, #f4f4f5, #d4d4d8) border-box;
+}
+.bold {
+  font-family: "Londrina Outline", sans-serif;
 }
