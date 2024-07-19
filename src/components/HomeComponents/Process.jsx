@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Process = () => {
   const [process, setProcess] = useState("spy");
+  // Function to cycle through process stages
+  const cycleProcess = () => {
+    setProcess((prevProcess) => {
+      const currentIndex = tabs.findIndex((tab) => tab.id === prevProcess);
+      const nextIndex = (currentIndex + 1) % tabs.length;
+      return tabs[nextIndex].id;
+    });
+  };
+
+  // Set up interval to change process state periodically
+  useEffect(() => {
+    const interval = setInterval(cycleProcess, 3000); // Change every 3 seconds
+
+    // Clean up interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
   const tabs = [
     {
       id: "spy",
       label: "Spy",
-      description:
-        "Research and analyze the project requirements and objectives.",
+      description: "Explore and understand the project's needs and goals.",
+      img: "https://t3.ftcdn.net/jpg/05/92/45/74/360_F_592457481_U9HwJCzC5zvYApnE0UMpzroqqVsUjocF.jpg",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -20,8 +37,8 @@ const Process = () => {
     {
       id: "dream",
       label: "Dream",
-      description:
-        "Let the imagination soar, planning and ideating various exciting directions.",
+      description: "Dream up creative paths to bring your project to life.",
+      img: "https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721174400&semt=ais_user",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -39,6 +56,7 @@ const Process = () => {
       label: "Create",
       description:
         "Bring the ideas to life with careful crafting and execution.",
+      img: "https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -59,6 +77,7 @@ const Process = () => {
       id: "polish",
       label: "Polish",
       description: "Refine and perfect the creation for final presentation.",
+      img: "https://static.vecteezy.com/system/resources/thumbnails/036/135/743/small_2x/ai-generated-colored-water-drops-on-abstract-background-water-drops-on-colorful-background-colored-wallpaper-ultra-hd-colorful-wallpaper-background-with-colored-bubbles-photo.jpg",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -78,9 +97,10 @@ const Process = () => {
   return (
     <div className="pt-12 pb-12 md:pt-20 md:pb-20">
       {/* heading */}
-      <div className="text-center pb-10 max-w-[44rem] ml-auto mr-auto">
+      <div className="text-center pb-10 max-w-[44rem] ml-auto mr-auto relative">
         <h2 className="font-[700] text-[2rem] md:text-[2.5rem] leading-[1.3125] md:leading-[1.25] tracking-tighter mb-4 text-[#3f3f46] dark:text-[#d4d4d8]">
-          The Process - Behind the Magic
+          The Process - Behind the{" "}
+          <span className="bold tracking-normal">Magic</span>
         </h2>
         <p className="text-[1.125rem] leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
           Embark on a journey with us as we transform{" "}
@@ -119,34 +139,23 @@ const Process = () => {
         {/* screen */}
         <div className="flex w-full items-center">
           <div className="w-full pt-12 md:pt-16 relative flex justify-center">
-            {process === "spy" ? (
-              <img
-                className="w-full max-w-[44rem] rounded-md"
-                src="https://t3.ftcdn.net/jpg/05/92/45/74/360_F_592457481_U9HwJCzC5zvYApnE0UMpzroqqVsUjocF.jpg"
-                alt=""
-              />
-            ) : process === "dream" ? (
-              <img
-                className="w-full max-w-[44rem] rounded-md"
-                src="https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721174400&semt=ais_user"
-                alt=""
-              />
-            ) : process === "create" ? (
-              <img
-                className="w-full max-w-[44rem] rounded-md"
-                src="https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg"
-                alt=""
-              />
-            ) : (
-              <img
-                className="w-full max-w-[44rem] rounded-md"
-                src="https://static.vecteezy.com/system/resources/thumbnails/036/135/743/small_2x/ai-generated-colored-water-drops-on-abstract-background-water-drops-on-colorful-background-colored-wallpaper-ultra-hd-colorful-wallpaper-background-with-colored-bubbles-photo.jpg"
-                alt=""
-              />
-            )}
-            <p className="absolute bold text-white text-3xl sm:text-4xl md:text-5xl uppercase top-[20%]">
-              {process}
-            </p>
+            {tabs.map((tab) => {
+              if (process === tab.id) {
+                return (
+                  <>
+                    <img
+                      key={tab.id}
+                      className="w-full max-w-[44rem] rounded-md"
+                      src={tab.img}
+                      alt=""
+                    />
+                    <p className="absolute bold text-white text-3xl sm:text-4xl md:text-5xl uppercase top-[20%]">
+                      {tab.label}
+                    </p>
+                  </>
+                );
+              }
+            })}
           </div>
         </div>
       </div>

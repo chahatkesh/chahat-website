@@ -6,6 +6,7 @@ import Process from "../components/HomeComponents/Process";
 import Testimonial from "../components/HomeComponents/Testimonial";
 import Contact from "../components/HomeComponents/Contact";
 import Loader2 from "../components/Loader2";
+import Message from "../components/HomeComponents/Message";
 
 const Home = () => {
   // loader start
@@ -25,6 +26,7 @@ const Home = () => {
       <Services />
       <Process />
       <Testimonial />
+      <Message />
       <Contact />
     </>
   );

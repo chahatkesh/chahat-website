@@ -29,3 +29,45 @@ ul {
 .bold {
   font-family: "Londrina Outline", sans-serif;
 }
+
+/* Scroller of work gallery */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scroll-content-l {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+.scroll-content-l .scroll-content-l {
+  animation: none;
+}
+.wrap-l:hover {
+  .scroll-content-l {
+    animation-play-state: paused;
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+.scroll-content-r {
+  display: flex;
+  animation: scroll-right 10s linear infinite;
+}
+.scroll-content-r .scroll-content-r {
+  animation: none;
+}
+.wrap-r:hover {
+  .scroll-content-r {
+    animation-play-state: paused;
+  }
+}
