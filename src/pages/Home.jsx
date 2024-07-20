@@ -7,6 +7,7 @@ import Testimonial from "../components/HomeComponents/Testimonial";
 import Contact from "../components/HomeComponents/Contact";
 import Loader2 from "../components/Loader2";
 import Message from "../components/HomeComponents/Message";
+import Logos from "../components/HomeComponents/Logos";
 
 const Home = () => {
   // loader start
@@ -24,6 +25,7 @@ const Home = () => {
       <Hero />
       <WorkGallery />
       <Services />
+      <Logos />
       <Process />
       <Testimonial />
       <Message />
