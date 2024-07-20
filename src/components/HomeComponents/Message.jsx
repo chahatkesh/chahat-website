@@ -2,7 +2,7 @@ import React from "react";
 
 const Message = () => {
   return (
-    <div className="pt-12 pb-12 md:pt-20 md:pb-20 max-w-[42rem] text-center">
+    <div className="pt-12 md:pt-20 max-w-[42rem] text-center">
       <div className="inline-flex relative">
         <svg
           className="absolute -z-10 top-[-0.5rem] left-[-1.5rem] fill-[#D1D5DB] dark:fill-[#d4d4d8]"
