@@ -95,7 +95,7 @@ const Process = () => {
     },
   ];
   return (
-    <div className="pt-12 pb-12 md:pt-20 md:pb-20">
+    <div className="py-12 md:py-20">
       {/* heading */}
       <div className="text-center pb-10 max-w-[44rem] ml-auto mr-auto relative">
         <h2 className="font-[700] text-[2rem] md:text-[2.5rem] leading-[1.3125] md:leading-[1.25] tracking-tighter mb-4 text-[#3f3f46] dark:text-[#d4d4d8]">

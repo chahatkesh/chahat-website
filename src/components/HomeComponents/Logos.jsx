@@ -24,7 +24,7 @@ const Logos = () => {
   ];
   return (
     <div>
-      <div className="flex overflow-hidden whitespace-nowrap relative w-full pt-12 ">
+      <div className="flex overflow-hidden whitespace-nowrap relative w-full">
         <div className="flex w-[200%] cursor-grab wrap-l">
           <div className="scroll-content-l">
             {images.map((src, index) => (

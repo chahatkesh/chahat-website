@@ -21,12 +21,11 @@ const Message = () => {
         />
       </div>
       <p className="text-[#111827] dark:text-[#d4d4d8] font-semibold text-[1.5rem] leading-[1.415] tracking-[-0.037em] mt-3">
-        “Simple has simplified my life in more ways than one. From managing my
-        sites to{" "}
+        “Turning ideas into{" "}
         <em className="text-[#6b7280] dark:text-[#d4d4d8cc] italic">
-          keeping track of tasks
-        </em>
-        , it&apos;s become my go-to tool for everything.”
+          innovative digital experiences
+        </em>{" "}
+        with <br /> passion and creativity.”
       </p>
       <div className="text-[#374151] dark:text-[#d4d4d8] mt-3 font-medium text-[0.875rem] leading-[1.5715]">
         <span>Chahat Kesharwani</span>

@@ -10,7 +10,7 @@ const WorkGallery = () => {
   ];
   const navigate = useNavigate();
   return (
-    <div className="pt-12 pb-12 md:pt-20 md:pb-20">
+    <div className="py-12 md:py-20">
       {/* heading */}
       <div className="text-center max-w-[44rem] ml-auto mr-auto relative">
         <h2 className="font-[700] text-[2rem] md:text-[2.5rem] leading-[1.3125] md:leading-[1.25] tracking-tighter text-[#3f3f46] dark:text-[#d4d4d8]">
@@ -67,7 +67,7 @@ const WorkGallery = () => {
           </div>
         </div>
       </div>
-      <div className="text-center max-w-[30rem] ml-auto mr-auto relative">
+      <div className="text-center max-w-[30rem] mx-auto relative">
         <button
           onClick={() => navigate("/portfolio")}
           className="px-6 py-3 bg-[#27272a] hover:bg-black dark:bg-[#f4f4f5] dark:hover:bg-white text-[#e4e4e7] hover:text-white dark:text-[#18181b] dark:hover:text-black rounded-md font-[700]">
