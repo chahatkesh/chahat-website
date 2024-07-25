@@ -1,52 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { logos } from "../../assets/HomeAssets";
 
 const Logos = () => {
-  const images = [
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-    "/src/assets/Images/121.png",
-  ];
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller");
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true);
+
+        const scrollerInner = scroller.querySelector(".scroller-inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
+  }, []);
   return (
-    <div>
-      <div className="flex overflow-hidden whitespace-nowrap relative w-full">
-        <div className="flex w-[200%] cursor-grab wrap-l">
-          <div className="scroll-content-l">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                className="h-16 md:h-32 mr-5 rounded max-w-none"
-                src={src}
-                alt=""
-              />
-            ))}
-          </div>
-          <div className="scroll-content-l">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                className="h-16 md:h-32 mr-5 rounded max-w-none"
-                src={src}
-                alt=""
-              />
-            ))}
-          </div>
-        </div>
+    <div className="flex cursor-grab scroller w-full">
+      <div className="scroller-inner flex">
+        {logos.map((logo, index) => (
+          <img
+            key={index}
+            className="h-16 md:h-32 m-3 rounded max-w-none"
+            src={logo.img}
+            alt=""
+          />
+        ))}
       </div>
     </div>
   );

@@ -1,3 +1,95 @@
+// logos
+import logo01 from './Images/logo01.png'
+import logo02 from './Images/logo02.png'
+import logo03 from './Images/logo03.png'
+import logo04 from './Images/logo04.png'
+import logo05 from './Images/logo05.png'
+import logo06 from './Images/logo06.png'
+import logo07 from './Images/logo07.png'
+import logo08 from './Images/logo08.png'
+import logo09 from './Images/logo09.png'
+import logo10 from './Images/logo10.png'
+import logo11 from './Images/logo11.png'
+import logo12 from './Images/logo12.png'
+import logo13 from './Images/logo13.png'
+import logo14 from './Images/logo14.png'
+import logo15 from './Images/logo15.png'
+import logo16 from './Images/logo16.png'
+
+
+
+export const logos = [
+  {
+    name: "logo01",
+    img: logo01
+  },
+  {
+    name: "logo02",
+    img: logo02
+  },
+  {
+    name: "logo03",
+    img: logo03
+  },
+  {
+    name: "logo04",
+    img: logo04
+  },
+  {
+    name: "logo05",
+    img: logo05
+  },
+  {
+    name: "logo06",
+    img: logo06
+  },
+  {
+    name: "logo07",
+    img: logo07
+  },
+  {
+    name: "logo08",
+    img: logo08
+  },
+  {
+    name: "logo09",
+    img: logo09
+  },
+  {
+    name: "logo10",
+    img: logo10
+  },
+  {
+    name: "logo11",
+    img: logo11
+  },
+  {
+    name: "logo12",
+    img: logo12
+  },
+  {
+    name: "logo13",
+    img: logo13
+  },
+  {
+    name: "logo14",
+    img: logo14
+  },
+  {
+    name: "logo15",
+    img: logo15
+  },
+  {
+    name: "logo16",
+    img: logo16
+  },
+]
+
+
+
+
+// services
+
 export const services = [
   {
     name: "UX Audit",
@@ -36,3 +128,55 @@ export const services = [
     color: "#DAEDF6AA",
   },
 ];
+
+// Testimonial
+export const testimonials = [
+  {
+    name: "Chahat",
+    designation: "Founder",
+    company: "designs4u",
+    logo: "",
+    img: logo01,
+    desc: "kjbe debch ekhkehb hjbjds nmbjnb nbhn kjhkugduygweuyh n nbhjsgde hv nvghvcjhbcjw ",
+  },
+  {
+    name: "Chahat",
+    designation: "Founder",
+    company: "designs4u",
+    logo: "",
+    img: logo01,
+    desc: "kjbe debch ekhkehb hjbjds nmbjnb nbhn kjhkugduygweuyh n nbhjsgde hv nvghvcjhbcjw ",
+  },
+  {
+    name: "Chahat",
+    designation: "Founder",
+    company: "designs4u",
+    logo: "",
+    img: logo01,
+    desc: "kjbe debch ekhkehb hjbjds nmbjnb nbhn kjhkugduygweuyh n nbhjsgde hv nvghvcjhbcjw ",
+  },
+  {
+    name: "Chahat",
+    designation: "Founder",
+    company: "designs4u",
+    logo: "",
+    img: logo01,
+    desc: "kjbe debch ekhkehb hjbjds nmbjnb nbhn kjhkugduygweuyh n nbhjsgde hv nvghvcjhbcjw ",
+  },
+  {
+    name: "Chahat",
+    designation: "Founder",
+    company: "designs4u",
+    logo: "",
+    img: logo01,
+    desc: "kjbe debch ekhkehb hjbjds nmbjnb nbhn kjhkugduygweuyh n nbhjsgde hv nvghvcjhbcjw ",
+  },
+  {
+    name: "Chahat",
+    designation: "Founder",
+    company: "designs4u",
+    logo: "",
+    img: logo01,
+    desc: "kjbe debch ekhkehb hjbjds nmbjnb nbhn kjhkugduygweuyh n nbhjsgde hv nvghvcjhbcjw ",
+  },
+]
