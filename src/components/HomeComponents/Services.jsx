@@ -7,7 +7,7 @@ const Services = () => {
       {/* heading */}
       <div className="text-center pb-20 max-w-[44rem] mx-auto relative">
         <h2 className="font-[700] text-[2rem] md:text-[2.5rem] leading-[1.3125] md:leading-[1.25] tracking-tighter mb-4 text-[#3f3f46] dark:text-[#d4d4d8]">
-          Services
+          Services <h3 className="text-[1.5rem] md:text-[2rem] inline">👨‍🔧</h3>
         </h2>
         <p className="text-[1.125rem] leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
           People ignore <span className="font-[600]">design</span> that ignores
@@ -25,7 +25,7 @@ const Services = () => {
                 style={{ backgroundColor: service.color }}
                 key={index}
                 className="h-auto px-4 py-9 md:px-8 md:py-12 rounded-md hover:shadow cursor-pointer relative">
-                <h1 className="text-2xl font-[600] text-[#3f3f46] mb-4">
+                <h1 className="text-2xl font-[600] text-[#3f3f46] dark:text-gray-900 mb-4">
                   {service.name}
                 </h1>
                 <p className="text-sm">{service.desc}</p>
