@@ -14,7 +14,9 @@ const Portfolio = () => {
     <Loader2 />
   ) : (
     <div>
-      <div>Portfolio</div>
+      <div>
+        <img className="dark:invert" src="/portfolio_logo.png" alt="" />
+      </div>
     </div>
   );
 };

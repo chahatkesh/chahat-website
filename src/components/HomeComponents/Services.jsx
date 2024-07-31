@@ -29,7 +29,7 @@ const Services = () => {
                   {service.name}
                 </h1>
                 <p className="text-sm">{service.desc}</p>
-                <div className="w-full flex justify-end px-[10%] items-center top-[-15%] left-0 absolute">
+                <div className="w-full flex justify-end px-[10%] items-center top-[-15%] left-0 absolute dark:invert">
                   <div className="w-16 h-16 p-2 rounded-lg ring-1 ring-slate-900/10 shadow overflow-hidden bg-white">
                     <img src={service.icon} alt="" />
                   </div>

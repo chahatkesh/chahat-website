@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const WorkGallery = () => {
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller");
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true);
+
+        const scrollerInner = scroller.querySelector(".scroller-inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
+  }, []);
   const images = [
-    "/src/assets/Images/123.png",
-    "/src/assets/Images/123.png",
-    "/src/assets/Images/123.png",
-    "/src/assets/Images/123.png",
+    "/WorkGallery/webmark.png",
+    "/WorkGallery/spotify.png",
+    "/WorkGallery/blog-app.png",
+    "/WorkGallery/food-del.png",
+    "/WorkGallery/food-del-2.png",
   ];
   const navigate = useNavigate();
   return (
@@ -17,61 +38,25 @@ const WorkGallery = () => {
           Work - <span className="bold tracking-normal">Gallery</span>
         </h2>
       </div>
-      {/* design */}
-      <div className="flex overflow-hidden whitespace-nowrap relative w-full pt-12 ">
-        <div className="flex w-[200%] cursor-grab wrap-l">
-          <div className="scroll-content-l">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                className="flex-auto w-[60vw] max-w-[350px] mr-5 rounded-2xl"
-                src={src}
-                alt=""
-              />
-            ))}
-          </div>
-          <div className="scroll-content-l">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                className="flex-auto w-[60vw] max-w-[350px] mr-5 rounded-2xl"
-                src={src}
-                alt=""
-              />
-            ))}
-          </div>
+      {/* works */}
+      <div className="flex cursor-grab pt-12 md:pt-20 pb-16 md:pb-24 scroller w-full">
+        <div className="scroller-inner flex">
+          {images.map((src, index) => (
+            <img
+              key={index}
+              className="flex-auto w-[60vw] max-w-[440px] mr-5 md:mr-8 rounded-2xl"
+              src={src}
+              alt=""
+            />
+          ))}
         </div>
       </div>
-      {/* devlopment */}
-      <div className="flex overflow-hidden whitespace-nowrap relative w-full pt-6 md:pt-7 pb-12">
-        <div className="flex w-[200%] cursor-grab wrap-r">
-          <div className="scroll-content-r">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                className="flex-auto w-[60vw] max-w-[350px] mr-5 rounded-2xl"
-                src={src}
-                alt=""
-              />
-            ))}
-          </div>
-          <div className="scroll-content-r">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                className="flex-auto w-[60vw] max-w-[350px] mr-5 rounded-2xl"
-                src={src}
-                alt=""
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* button */}
       <div className="text-center max-w-[30rem] mx-auto relative">
         <button
           onClick={() => navigate("/portfolio")}
           className="px-6 py-3 bg-[#27272a] hover:bg-black dark:bg-[#f4f4f5] dark:hover:bg-white text-[#e4e4e7] hover:text-white dark:text-[#18181b] dark:hover:text-black rounded-md font-[700]">
-          Explore My Portfolio <span>-&gt;</span>
+          Explore Recent Projects <span>-&gt;</span>
         </button>
       </div>
     </div>

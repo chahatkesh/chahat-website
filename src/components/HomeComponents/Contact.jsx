@@ -41,7 +41,7 @@ const Contact = () => {
       </div>
       <div className="relative">
         <iframe
-          className="w-full bg-gray-50 dark:bg-[#27272a] h-[60vh] md:h-[450px] rounded-lg relative"
+          className="w-full bg-gray-50 dark:bg-[#27272a] h-[60vh] md:h-[550px] rounded-lg relative"
           src="https://links.collect.chat/669a8ad83e99425e992de591"
         />
         <script

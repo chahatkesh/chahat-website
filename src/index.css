@@ -30,47 +30,6 @@ ul {
   font-family: "Londrina Outline", sans-serif;
 }
 
-/* Scroller of work gallery */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.scroll-content-l {
-  display: flex;
-  animation: scroll-left 10s linear infinite;
-}
-.scroll-content-l .scroll-content-l {
-  animation: none;
-}
-.wrap-l:hover {
-  .scroll-content-l {
-    animation-play-state: paused;
-  }
-}
-@keyframes scroll-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
-.scroll-content-r {
-  display: flex;
-  animation: scroll-right 10s linear infinite;
-}
-.scroll-content-r .scroll-content-r {
-  animation: none;
-}
-.wrap-r:hover {
-  .scroll-content-r {
-    animation-play-state: paused;
-  }
-}
 /* scrolller for logos */
 .scroller[data-animated="true"] {
   overflow: hidden;
@@ -87,7 +46,7 @@ ul {
 .scroller[data-animated="true"] .scroller-inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 30s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
@@ -98,8 +57,5 @@ ul {
 .scroller:hover {
   .scroller-inner {
     animation-play-state: paused;
-  }
-  article {
-    transform: rotate(0);
   }
 }
