@@ -93,37 +93,37 @@ export const logos = [
 export const services = [
   {
     name: "UX Audit",
-    desc: "Unlocking the roadmap to a better version of your product with Private UX audits that have helped start-ups get their first customers, and billion dollar companies keep theirs.",
+    desc: "Unlock the roadmap to a better version of your product with private UX audits that have helped start-ups acquire their first customers and billion-dollar companies retain theirs.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
     color: "#ffedef",
   },
   {
     name: "UI Redesign",
-    desc: "Unlocking the roadmap to a better version of your product with Private UX audits that have helped start-ups get their first customers, and billion dollar companies keep theirs.",
+    desc: "Transform your product with a UI redesign that enhances user experience, ensuring your product is both visually appealing and user-friendly.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
     color: "#fce8da",
   },
   {
     name: "Website Devlopment",
-    desc: "Custom websites that reflect your brand. Showcase your achievements and connect with your audience.",
+    desc: "Custom websites that reflect your brand. Showcase your achievements and connect with your audience through a tailored online presence.",
     icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTDmuBjdjVnRd6y-SJdAvorI35cIm3yCQrQ&s",
     color: "#f2e9ff",
   },
   {
     name: "Logo Designing",
-    desc: "Unlocking the roadmap to a better version of your product with Private UX audits that have helped start-ups get their first customers, and billion dollar companies keep theirs.",
+    desc: "Crafting unique logos that embody your brand's identity, helping you stand out and leave a lasting impression.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
     color: "#fef1fb",
   },
   {
     name: "Rebranding",
-    desc: "Unlocking the roadmap to a better version of your product with Private UX audits that have helped start-ups get their first customers, and billion dollar companies keep theirs.",
+    desc: "Revitalize your brand with a comprehensive rebranding strategy that aligns with your vision and resonates with your audience.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
     color: "#fcf5e2",
   },
   {
     name: "Design Subscription",
-    desc: "Tired of looking for reliable freelancer for your client projects? Partner up with me to get high-quality design work on a regular basis. It's easy and flexible. You can start and cancel anytime.",
+    desc: "Tired of searching for a reliable freelancer for your client projects? Partner with me to get high-quality design work regularly. It's easy and flexible; you can start and cancel anytime.",
     icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQikvMfXSm_KGdWaPI9y-t-oXE_v5tYlmD2uw&s",
     color: "#f1f7fd",
   },

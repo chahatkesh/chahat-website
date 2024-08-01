@@ -3,7 +3,7 @@ import { testimonials } from "../../assets/HomeAssets";
 
 const Testimonial = () => {
   return (
-    <div className="bg-pink-50 dark:bg-pink-950 w-full py-12 md:py-20 rounded-md">
+    <div className="bg-violet-50 dark:bg-violet-950 w-full py-12 md:py-20 rounded-md">
       <div className="text-center max-w-[80%] ml-auto mr-auto relative ">
         <h2 className="font-[700] mb-4 text-[2rem] md:text-[2.5rem] leading-[1.3125] md:leading-[1.25] tracking-tighter text-[#3f3f46] dark:text-[#d4d4d8]">
           Testimonials{" "}

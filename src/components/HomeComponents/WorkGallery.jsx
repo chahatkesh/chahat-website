@@ -25,9 +25,11 @@ const WorkGallery = () => {
   const images = [
     "/WorkGallery/webmark.png",
     "/WorkGallery/spotify.png",
+    "/WorkGallery/food-del-2.png",
+    "/WorkGallery/d4u.png",
     "/WorkGallery/blog-app.png",
     "/WorkGallery/food-del.png",
-    "/WorkGallery/food-del-2.png",
+    "/WorkGallery/gw.png",
   ];
   const navigate = useNavigate();
   return (
