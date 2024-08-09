@@ -30,7 +30,7 @@ ul {
   font-family: "Londrina Outline", sans-serif;
 }
 
-/* scrolller for logos */
+/* scrolller */
 .scroller[data-animated="true"] {
   overflow: hidden;
   -webkit-mask: linear-gradient(
@@ -58,4 +58,19 @@ ul {
   .scroller-inner {
     animation-play-state: paused;
   }
+}
+.border-in-header {
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(203, 213, 225, 0.6),
+      transparent
+    )
+    1;
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }

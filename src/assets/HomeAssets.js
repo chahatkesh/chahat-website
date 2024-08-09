@@ -1,3 +1,24 @@
+// hero section
+import hero_img from "./Images/hero_img.png";
+import icon01 from './Images/icon01.png'
+import icon02 from './Images/icon02.png'
+import icon03 from './Images/icon03.png'
+import icon04 from './Images/icon04.png'
+import icon05 from './Images/icon05.png'
+import icon06 from './Images/icon06.png'
+import stripes from "./Images/stripes.svg"
+export const hero_asset = {
+  hero_img,
+  icon01,
+  icon02,
+  icon03,
+  icon04,
+  icon05,
+  icon06,
+  stripes,
+}
+
+
 // logos
 import logo01 from "./Images/logo01.png";
 import logo02 from "./Images/logo02.png";
@@ -95,44 +116,42 @@ export const services = [
     name: "UX Audit",
     desc: "Unlock the roadmap to a better version of your product with private UX audits that have helped start-ups acquire their first customers and billion-dollar companies retain theirs.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
-    color: "#ffedef",
+    color: "#fdf2f8",
   },
   {
     name: "UI Redesign",
     desc: "Transform your product with a UI redesign that enhances user experience, ensuring your product is both visually appealing and user-friendly.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
-    color: "#fce8da",
+    color: "#f0fdf4",
   },
   {
     name: "Website Devlopment",
-    desc: "Custom websites that reflect your brand. Showcase your achievements and connect with your audience through a tailored online presence.",
+    desc: "Custom websites that reflect your brand - School websites, E-commerce websites, Portfolio websites, Agency website and many more...",
     icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTDmuBjdjVnRd6y-SJdAvorI35cIm3yCQrQ&s",
-    color: "#f2e9ff",
+    color: "#faf5ff",
   },
   {
     name: "Logo Designing",
     desc: "Crafting unique logos that embody your brand's identity, helping you stand out and leave a lasting impression.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
-    color: "#fef1fb",
+    color: "#fffbeb",
   },
   {
     name: "Rebranding",
     desc: "Revitalize your brand with a comprehensive rebranding strategy that aligns with your vision and resonates with your audience.",
     icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
-    color: "#fcf5e2",
+    color: "#f7fee7",
   },
   {
     name: "Design Subscription",
     desc: "Tired of searching for a reliable freelancer for your client projects? Partner with me to get high-quality design work regularly. It's easy and flexible; you can start and cancel anytime.",
     icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQikvMfXSm_KGdWaPI9y-t-oXE_v5tYlmD2uw&s",
-    color: "#f1f7fd",
+    color: "#fff1f2",
   },
 ];
 
 // Testimonial
 import logo from "./Images/122.png";
-
-
 
 export const testimonials = [
   {
