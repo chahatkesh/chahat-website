@@ -65,9 +65,11 @@ const Hero = () => {
             wonderful project!
           </h3>
           <div className="pt-4 pb-12 flex gap-4">
-            <button className="px-6 py-3 bg-[#27272a] hover:bg-black dark:bg-[#f4f4f5] dark:hover:bg-white text-[#e4e4e7] hover:text-white dark:text-[#18181b] dark:hover:text-black rounded-md font-[700]">
+            <a
+              href="https://wa.me/9170602005?text=Hi%20Chahat"
+              className="px-6 py-3 bg-[#27272a] hover:bg-black dark:bg-[#f4f4f5] dark:hover:bg-white text-[#e4e4e7] hover:text-white dark:text-[#18181b] dark:hover:text-black rounded-md font-[700]">
               Text me
-            </button>
+            </a>
             <button
               onClick={() => navigate("/portfolio")}
               className="px-6 py-3 dark:bg-[#27272a] dark:hover:bg-black bg-[#f4f4f5] hover:shadow hover:bg-white dark:text-[#e4e4e7] dark:hover:text-white text-[#18181b] hover:text-black rounded-md font-[700]">
@@ -85,25 +87,25 @@ const Hero = () => {
               <h1 className="font-[700] text-[1.75rem] md:text-[2.5rem] leading-[1.1] md:leading-[1.25] tracking-tighter text-[#3f3f46] dark:text-[#d4d4d8]">
                 40+
               </h1>
-              <h4 className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
+              <p className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
                 Projects Done
-              </h4>
+              </p>
             </div>
             <div className="flex-col text-center">
               <h1 className="font-[700] text-[1.75rem] md:text-[2.5rem] leading-[1.1] md:leading-[1.25] tracking-tighter text-[#3f3f46] dark:text-[#d4d4d8]">
                 100%
               </h1>
-              <h4 className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
+              <p className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
                 Happy Client
-              </h4>
+              </p>
             </div>
             <div className="flex-col text-center">
               <h1 className="font-[700] text-[1.75rem] md:text-[2.5rem] leading-[1.1] md:leading-[1.25] tracking-tighter text-[#3f3f46] dark:text-[#d4d4d8]">
                 12+
               </h1>
-              <h4 className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
+              <p className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
                 Certifications
-              </h4>
+              </p>
             </div>
           </div>
         </div>

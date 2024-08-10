@@ -48,7 +48,9 @@ const Navbar = () => {
             </div>
             Available
           </div>
-          <div className="bg-[#fffcef] pl-3 pr-3 pt-1 pb-1 rounded-full border border-[#fff6d3] inline-flex items-center cursor-pointer hover:bg-[#fffcd9]">
+          <a
+            href="mailto:chahat.create@gmail.com"
+            className="bg-[#fffcef] pl-3 pr-3 pt-1 pb-1 rounded-full border border-[#fff6d3] inline-flex items-center cursor-pointer hover:bg-[#fffcd9]">
             <svg
               className="w-3.5 mr-2 fill-[#625833]"
               viewBox="0 0 512 512"
@@ -57,7 +59,7 @@ const Navbar = () => {
             </svg>
             <span className="hidden lg:block">chahat.create@gmail.com</span>
             <span className="lg:hidden">Email</span>
-          </div>
+          </a>
         </div>
 
         <div className="flex gap-3 items-center">

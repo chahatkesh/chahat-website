@@ -34,10 +34,12 @@ const Contact = () => {
           <LocationIcon />
           <h3>Remotely from India</h3>
         </div>
-        <div className="flex justify-center md:justify-start items-center text-lg leading-snug tracking-tight text-gray-500 dark:text-gray-400 dark:hover:text-gray-300 cursor-pointer hover:text-gray-800">
+        <a
+          href="mailto:chahat.create@gmail.com"
+          className="flex justify-center md:justify-start items-center text-lg leading-snug tracking-tight text-gray-500 dark:text-gray-400 dark:hover:text-gray-300 cursor-pointer hover:text-gray-800">
           <EmailIcon />
           <h3>chahat.create@gmail.com</h3>
-        </div>
+        </a>
       </div>
       <div className="relative">
         <iframe

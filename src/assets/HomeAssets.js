@@ -133,7 +133,7 @@ export const services = [
   {
     name: "Logo Designing",
     desc: "Crafting unique logos that embody your brand's identity, helping you stand out and leave a lasting impression.",
-    icon: "https://cdn-icons-png.freepik.com/512/674/674327.png",
+    icon: "https://media.licdn.com/dms/image/D560BAQFTXTJKxNP_og/company-logo_200_200/0/1709886256032/designs4u_in_logo?e=2147483647&v=beta&t=ZOmmMF9tZCR9u0METXaxytpmSI1tDkSRUUKyVXSaas4",
     color: "#fffbeb",
   },
   {
@@ -152,54 +152,38 @@ export const services = [
 
 // Testimonial
 import logo from "./Images/122.png";
+import ehub from "./Images/ehub.png";
+import gw_logo from "./Images/gw_logo.png";
+import d4u from "./Images/d4u.png";
+
+
+import karanveer from "./Images/karanveer.jpeg"
+import gw from "./Images/gw.png"
+import bhavesh from "./Images/bhavesh.jpg"
 
 export const testimonials = [
   {
-    name: "Chahat",
+    name: "Karan Veer Singh",
     designation: "Founder",
-    company: "designs4u",
-    logo: logo,
-    img: logo01,
-    desc: " We needed a modern and dynamic website to showcase our portfolio and services, and Chahat delivered beyond our expectations. The design is sleek, the animations are engaging, and the overall user experience is top-notch."
+    company: "engineerHUB",
+    logo: ehub,
+    img: karanveer,
+    desc: "Chahat's designs at engineerHUB were exceptional. Their talent in turning ideas into engaging visuals was impressive, and their creativity and professionalism made a big impact."
   },
   {
-    name: "Chahat",
-    designation: "Founder",
-    company: "designs4u",
-    logo: logo,
-    img: logo01,
-    desc: " We needed a modern and dynamic website to showcase our portfolio and services, and Chahat delivered beyond our expectations. The design is sleek, the animations are engaging, and the overall user experience is top-notch."
+    name: "Deepansh Singh",
+    designation: "Manager",
+    company: "GW Infra",
+    logo: gw_logo,
+    img: gw,
+    desc: "Chahat has great taste in design. He knows how to take specific inputs and come up with great ideas. He expressed our love for Customers in the Logo and that's just awesome!"
   },
   {
-    name: "Chahat",
-    designation: "Founder",
+    name: "Bhavesh Singh",
+    designation: "Developer",
     company: "designs4u",
-    logo: logo,
-    img: logo01,
-    desc: " We needed a modern and dynamic website to showcase our portfolio and services, and Chahat delivered beyond our expectations. The design is sleek, the animations are engaging, and the overall user experience is top-notch."
-  },
-  {
-    name: "Chahat",
-    designation: "Founder",
-    company: "designs4u",
-    logo: logo,
-    img: logo01,
-    desc: " We needed a modern and dynamic website to showcase our portfolio and services, and Chahat delivered beyond our expectations. The design is sleek, the animations are engaging, and the overall user experience is top-notch."
-  },
-  {
-    name: "Chahat",
-    designation: "Founder",
-    company: "designs4u",
-    logo: logo,
-    img: logo01,
-    desc: " We needed a modern and dynamic website to showcase our portfolio and services, and Chahat delivered beyond our expectations. The design is sleek, the animations are engaging, and the overall user experience is top-notch."
-  },
-  {
-    name: "Chahat",
-    designation: "Founder",
-    company: "designs4u",
-    logo: logo,
-    img: logo01,
-    desc: " We needed a modern and dynamic website to showcase our portfolio and services, and Chahat delivered beyond our expectations. The design is sleek, the animations are engaging, and the overall user experience is top-notch."
+    logo: d4u,
+    img: bhavesh,
+    desc: "Chahat truly grasped the vision for our logo at Designs4U. Their creativity and understanding of our brand resulted in a innovative design that perfectly delivered exactly what we needed."
   },
 ];

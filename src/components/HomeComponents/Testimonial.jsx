@@ -26,13 +26,7 @@ const Testimonial = () => {
                 alt=""
               />
               <p className="mb-6 text-[#37463f] text-justify w-[90%] text-[14px]">
-                <span className="text-[16px] text-black font-[700]">
-                  &ldquo;
-                </span>{" "}
-                {testimonial.desc}{" "}
-                <span className="text-[16px] text-black font-[700]">
-                  &rdquo;
-                </span>
+                {testimonial.desc}
               </p>
               <hr className="my-3 border-[#3f3f46cc] opacity-50" />
               <div className="flex items-center">
