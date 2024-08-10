@@ -85,7 +85,7 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-4 md:gap-12 w-full justify-center items-center max-w-fit">
             <div className="flex-col text-center">
               <h1 className="font-[700] text-[1.75rem] md:text-[2.5rem] leading-[1.1] md:leading-[1.25] tracking-tighter text-[#3f3f46] dark:text-[#d4d4d8]">
-                40+
+                25+
               </h1>
               <p className="text-sm leading-[1.5] tracking-[-0.017em] text-[#71717a] dark:text-[#a1a1aa]">
                 Projects Done

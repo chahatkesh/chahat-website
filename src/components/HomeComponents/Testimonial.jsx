@@ -19,7 +19,7 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-4 md:p-6 bg-white dark:invert hover:shadow rounded-lg">
+              className="p-4 md:p-6 bg-white dark:invert hover:shadow rounded-xl">
               <img
                 className="h-9 mb-4 grayscale opacity-95"
                 src={testimonial.logo}

@@ -13,7 +13,7 @@ const Process = () => {
 
   // Set up interval to change process state periodically
   useEffect(() => {
-    const interval = setInterval(cycleProcess, 3000); // Change every 3 seconds
+    const interval = setInterval(cycleProcess, 3500); // Change every 3 seconds
 
     // Clean up interval on component unmount
     return () => clearInterval(interval);
@@ -24,7 +24,7 @@ const Process = () => {
       id: "spy",
       label: "Spy",
       description: "Explore and understand the project's needs and goals.",
-      img: "https://t3.ftcdn.net/jpg/05/92/45/74/360_F_592457481_U9HwJCzC5zvYApnE0UMpzroqqVsUjocF.jpg",
+      img: "https://s.wsj.net/public/resources/images/BN-HD663_0226_c_P_20150226175509.jpg",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -38,7 +38,7 @@ const Process = () => {
       id: "dream",
       label: "Dream",
       description: "Dream up creative paths to bring your project to life.",
-      img: "https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721174400&semt=ais_user",
+      img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/Leveraging_design_thinking_for_effective_project_management.jpg",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -56,7 +56,7 @@ const Process = () => {
       label: "Create",
       description:
         "Bring the ideas to life with careful crafting and execution.",
-      img: "https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg",
+      img: "https://opengeekslab.com/wp-content/uploads/2019/04/4-Tips-on-How-to-Choose-a-Tech-Stack-for-Your-Project.png",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -77,7 +77,7 @@ const Process = () => {
       id: "polish",
       label: "Polish",
       description: "Refine and perfect the creation for final presentation.",
-      img: "https://static.vecteezy.com/system/resources/thumbnails/036/135/743/small_2x/ai-generated-colored-water-drops-on-abstract-background-water-drops-on-colorful-background-colored-wallpaper-ultra-hd-colorful-wallpaper-background-with-colored-bubbles-photo.jpg",
+      img: "https://www.adobe.com/acrobat/hub/media_178a53074b5112714f02a70da4d07c2642947ec54.jpeg?width=750&format=jpeg&optimize=medium",
       icon: (
         <svg
           className="fill-[#3f3f46cc] dark:fill-[#d4d4d8cc] h-5"
@@ -145,13 +145,10 @@ const Process = () => {
                   <>
                     <img
                       key={tab.id}
-                      className="w-full max-w-[44rem] rounded-md"
+                      className="w-full max-w-[44rem] aspect-[16/9] rounded-md"
                       src={tab.img}
                       alt=""
                     />
-                    <p className="absolute bold text-white text-3xl sm:text-4xl md:text-5xl uppercase top-[20%]">
-                      {tab.label}
-                    </p>
                   </>
                 );
               }

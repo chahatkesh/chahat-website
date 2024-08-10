@@ -13,5 +13,5 @@ const Footer = () => {
     </div>
   );
 };
-
+//  www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=chahatkesharwani
 export default Footer;
